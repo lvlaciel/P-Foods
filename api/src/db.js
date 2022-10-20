@@ -12,7 +12,8 @@ const sequelize = new Sequelize(DATABASE_URL, {
   dialectOptions: {
     ssl: {
       require: true,
-      rejectUnauthorized: false
+      rejectUnauthorized: false,
+      DATABASE_URL
     }
   },
 });
