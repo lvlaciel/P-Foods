@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url(https://fonts.googleapis.com/css?family=Merienda);
+
+.recipeCard{
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid var( --clr-bg);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 400px;
+    height: 490px;
+    object-fit: contain;
+    margin: 40px;
+    border-radius: 4px;
+}
+.recipeCard:hover{
+  border-radius: 2%;
+  border: none;
+  transition: 1.5s;
+  box-shadow: #ffffff 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.name{
+  display: flex;
+  font-size: 20px;
+  align-self: center;
+  font-family: Sacramento;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.img{
+    padding: 15px;
+    height: 270px;
+    width: 100%;
+    align-self: center;
+}
+.score{
+  display: flex;
+  float: left;
+  margin-bottom:15px;
+  font-family: Merienda;
+  font-size: 12px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+.btnDetails{
+  align-self: center;
+  width: 100%;
+  background-color: rgba(167, 1, 1, 0.849);
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: darkgray;
+  cursor: pointer;
+  font-family: Merienda;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .50rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnDetails:hover {
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.btnDetails:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

@@ -1,0 +1,59 @@
+.itemsPages{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.btnPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1px;
+    height: 1px;
+    padding:14px;
+    margin-top: 2px;
+    margin: 1px;
+    font-size: 13px;
+    border-color: black;
+    cursor: pointer;
+    background:rgb(123, 117, 117);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 50px;
+    transition: 0.8s;
+}
+.btnPage:focus{
+    background-color: transparent;
+}
+.btnPage:hover{
+    background: rgba(167, 1, 1, 0.849);
+    border-radius: 15px;
+}
+.arrowPage{
+    display: flex;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    font-size: 25px;
+}
+.arrowPage:hover{
+    background: rgba(167, 1, 1, 0.849);
+    border-radius: 15px;
+}
+@media screen and (max-width: 400px){
+    .itemsPages{
+      width: 100%;
+    }
+    .arrowPage{
+        font-size: 20px;
+    } 
+}
